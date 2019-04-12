@@ -1,0 +1,55 @@
+﻿<!doctype html>
+
+<html lang="en-US">
+
+<head>
+ 
+
+
+<body text="red" bgcolor="#cccccc" background="фон10.JPG">
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ 
+ <title>Присылайте мне письма!</title>
+  
+<meta name="author" content="ALE">
+ 
+ <link rel="stylesheet" type="text/css" media="all" href="styles.css">
+  
+<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Skranji:400,700|Oxygen:400,700">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="w">
+    <h1>Написать письмо !</h1>
+    <form id="contactform" name="contact" method="post" action="mailto: "alinochka.gabdullina@bk.ru" >
+ <a href="mailto:alinochka.gabdullina@bk.ru">Написать автору</a>     <p class="note"><span class="req">*</span> Поля со звездочкой обязательны для заполнения</p>
+      <div class="row">
+        <label for="name">Ваше Имя <span class="req">*</span></label>
+        <input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Стив Джобс" required>
+      </div>
+	  
+      <div class="row">
+        <label for="email">E-mail Адрес <span class="req">*</span></label>
+        <input type="email" name="email" id="email" class="txt" tabindex="2" placeholder="alinochka.gabdullina@bk.ru" required>
+      </div>
+      
+      <div class="row">
+        <label for="subject">Тема <span class="req">*</span></label>
+        <input type="text" name="subject" id="subject" class="txt" tabindex="3" placeholder="Тема письма" required>
+      </div>
+      
+      <div class="row">
+        <label for="message">Сообщение <span class="req">*</span></label>
+        <textarea name="message" id="message" class="txtarea" tabindex="4" required></textarea>
+      </div>
+      
+      <div class="center">
+<a href="mailto:admin@luksweb.ru">   <id="submitbtn" name="submitbtn" tabindex="5" value="Отправить Сообщение">
+<button type="submit"><a href="mailto:alinochka.gabdullina@bk.ru? subject=От%20уважаемого%20читателя&amp;body=Здравствуйте!%0D%0A%0D%0AВыражаю%20Вам%20свое%20...%0D%0AВы%20сильно%20...%20...%20...%20...">Отправить письмо админу alinochka.ru</a></button>    </div>
+    </form>
+  </div>
+</body>
+
+
+</html>

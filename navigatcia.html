@@ -1,0 +1,126 @@
+<html>
+        <body>
+ <body text="black" bgcolor="#000000" background="беж.JPG">
+<HEAD>
+           Разделы:<br>
+ <a href="frame.html" target="okno2">&#10022;Главная страница</a><br>
+
+<a href="napravlenia.html" target="okno1">&#10022;Профессии прошлого</a><br>
+
+<a href="napravlenia1.html" target="okno1">&#10022;Профессии настоящего</a><br>
+
+<a href="napravlenia2.html" target="okno1">&#10022;Професии будущего</a><br>
+
+<a href="napravlenia3.html" target="okno1">&#10022;Игры по профессиям</a><br>
+
+<a href="napravlenia4.html" target="okno1">&#10022;Профессиональные учебные заведения г. Нижнекамска</a><br>
+
+ <a href="tr.html" target="okno1">&#10022;Тест про прочитанному</a><br>
+
+<a href="video.html" target="okno1">&#10022;Видеоролики по профориентации</a><br>
+
+ <a href="link.html" target="okno1">&#10022;Галерея</a><br>
+
+<a href="index.html" target="blank">&#9993;Присылайте мне письма!</a><br>
+
+ <a href="tsvet.html" target="okno1">&#9997;Об авторе</a>
+<br>
+<br>
+
+   <script language = "javascript">
+function montharr(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11) {
+  this[0] = m0;
+  this[1] = m1;
+  this[2] = m2;
+  this[3] = m3;
+  this[4] = m4;
+  this[5] = m5;
+  this[6] = m6;
+  this[7] = m7;
+  this[8] = m8;
+  this[9] = m9;
+  this[10] = m10;
+  this[11] = m11;
+}
+function calendar() {
+  var monthNames = "   ЯнвФевMaрАпрMaйИюнИюлАвгСенОктНояДек";
+  var today = new Date();
+  var thisDay;
+  var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30,31, 30, 31);
+  year = today.getYear();
+  if (year < 2000)
+    year = year + 1900;
+  thisDay = today.getDate();
+  if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+    monthDays[1] = 29;
+  nDays = monthDays[today.getMonth()];
+  firstDay = today;
+  firstDay.setDate(1); 
+  testMe = firstDay.getDate();
+  if (testMe == 2)
+    firstDay.setDate(0);
+  startDay = firstDay.getDay();
+  document.writeln("<div align = 'right'>");
+  document.write("<table border = '1'>");
+  document.write("<tr><th colspan='7'>");
+  document.write(monthNames.substring(today.getMonth() * 3 + 3, (today.getMonth() + 1) * 3 + 3));
+  document.write(". ");
+  document.write(year);
+  document.write("<tr><th>Вск <th>Пон <th>Вт <th>Ср <th>Чт <th>Пт <th>Сб" );
+  document.write("<tr>");
+  column = 0;
+  for (i = 0; i < startDay; i++) {
+    document.write("<td width='30'>");
+    column++;
+  }
+  for (i = 1; i <= nDays; i++) {
+    document.write("<td width=30>");
+    if (i == thisDay)
+      document.write("<span style = 'color: red;'>")
+    document.write(i);
+    if (i == thisDay)
+      document.write("</span>")
+    column++;
+    if (column == 7) {
+      document.write("<tr>"); 
+      column = 0;
+    }
+  }
+  document.write("</table>");
+  document.writeln("</div>");
+}
+</script> 
+
+<script type="text/javascript">
+  function digitalWatch() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    if (hours < 10) hours = "0" + hours;
+    if (minutes < 10) minutes = "0" + minutes;
+    if (seconds < 10) seconds = "0" + seconds;
+    document.getElementById("digital_watch").innerHTML = hours + ":" + minutes + ":" + seconds;
+    setTimeout("digitalWatch()", 1000);
+  }
+</script>
+        
+
+
+    
+</head>
+</body>
+<body>
+<script language = 'javascript'>
+  calendar();
+</script>
+ </body>
+<body> 
+ <body onload="digitalWatch()"><p id="digital_watch" "border="2" style="color: #f00; font-size: 200%; font-weight: bold;"border="2" align="middle"></p>
+</body> 
+<body> 
+<body> 
+ <table cellpadding=0 cellspacing=0 width=202 style="border:solid 1px #fe2020;font-family:Arial;font-size:12px;background-color:#fedf20"><tr><td><table width=100% cellpadding=0 cellspacing=0><tr><td width=8 height=30 background="https://rp5.ru/informer/htmlinfa/topshl.png"  bgcolor=#fe2020> </td><td width=* align=center background="https://rp5.ru/informer/htmlinfa/topsh.png" bgcolor=#fe2020><a style="color:#ffffff; font-family:Arial;font-size: 12px;" href="https://rp5.ru/5483/ru"><b>Нижнекамск</b></a></td><td width=8 height=30 background="https://rp5.ru/informer/htmlinfa/topshr.png" bgcolor=#fe2020> </td></tr></table></td></tr><tr><td valign=top style="padding:0;"><iframe src="https://rp5.ru/htmla.php?id=5483&lang=ru&um=00000&bg=%23fedf20&ft=%23ffffff&fc=%23fe2020&c=%23000000&f=Arial&s=12&sc=4" width=100% height=268 frameborder=0 scrolling=no style="margin:0;"></iframe></td></tr></table>
+</body> 
+</body> 
+        </html>

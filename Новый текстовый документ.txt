@@ -1,0 +1,8 @@
+   <html>
+        <head>
+        <title>текст возле картинки</title>
+        </head>
+        <body>
+    <img src="volonter.png" align="middle" alt="Супер сайт">ДВИЖЕНИЕ ВОЛОНТЁРОВ
+        </body>
+        </html>
